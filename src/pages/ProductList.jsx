@@ -27,7 +27,7 @@ export default function ProductList() {
         <Table.Body>
           {products.map((product) => (
             <Table.Row key={product.id}>
-              <Table.Cell><Link to={`/products/${product.id}`}>{product.productName}</Link></Table.Cell>
+              <Table.Cell><Link to={`/products/${product.productName}`}>{product.productName}</Link></Table.Cell>
               <Table.Cell>{product.unitPrice}</Table.Cell>
               <Table.Cell>{product.unitsInStock}</Table.Cell>
               <Table.Cell>{product.quantityPerUnit}</Table.Cell>
