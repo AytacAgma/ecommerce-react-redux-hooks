@@ -8,7 +8,7 @@ export default function CartSummary() {
   const {cartItems} = useSelector(state => state.cart)
     return (
         <div>
-            <Dropdown item text="Language">
+            <Dropdown item text="Your Cart">
               <Dropdown.Menu>
                 {
                   cartItems.map(cartItem=>(
@@ -22,7 +22,7 @@ export default function CartSummary() {
                 }
                 
                 <Dropdown.Divider/>
-                <Dropdown.Item as={NavLink} to="/cart">Sepete Git</Dropdown.Item>
+                <Dropdown.Item as={NavLink} to="/cart">Go To Your Cart</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
         </div>
